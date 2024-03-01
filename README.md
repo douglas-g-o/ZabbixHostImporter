@@ -2,7 +2,7 @@
 
 Este script Python foi desenvolvido para automatizar o processo de importação de hosts para o Zabbix, uma solução popular de monitoramento de redes. Utilizando a biblioteca pyzabbix, o script se conecta à API do Zabbix, lê um arquivo CSV com os detalhes dos hosts e os importa automaticamente para a plataforma de monitoramento.
 
-Pré-requisitos
+Pré-requisitos:
 Antes de executar o script, certifique-se de ter instalado as seguintes bibliotecas Python:
 pip install pyzabbix
 pip install pyzabbix pandas
@@ -23,5 +23,19 @@ teste,192.168.0.20,Clientes/Projeto;Parceiros/Test;Cyber/SOC,Template Module ICM
 Para associar um host a múltiplos grupos, separe os nomes dos grupos com ponto e vírgula (;). Isso permite uma categorização detalhada e precisa dentro do Zabbix.
 
 # Notas Adicionais
+
 Certifique-se de que o usuário fornecido tenha permissões adequadas no Zabbix para criar hosts e manipular grupos e templates.
 Revise o arquivo CSV para garantir que os dados estão corretos e formatados conforme o exemplo, especialmente a separação dos grupos de hosts.
+
+# Proxy.py
+
+Para utilizar o script proxy.py, você precisará fornecer algumas informações específicas sobre o proxy do Zabbix que deseja localizar. Aqui está uma explicação de como usar o script:
+
+Configuração das Credenciais do Zabbix:
+
+Substitua "http://your-domain.com/zabbix" pela URL do seu servidor Zabbix.
+Substitua "Admin" pelo nome de usuário do seu Zabbix.
+Substitua "zabbix" pela senha do seu Zabbix.
+Nome do Proxy:
+
+No trecho nome_do_proxy = "colocar nome", substitua "colocar nome" pelo nome do proxy do Zabbix que você está buscando.
